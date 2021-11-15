@@ -5,7 +5,7 @@ from threading import Thread
 from time import sleep
 
 from termcolor import colored
-from playsound import playsound
+
 
 from config import *
 
@@ -52,10 +52,7 @@ def pprint(art,time):
                 
         print(colored(replaceMultiple(art[i],colorCodes,''),random.choice(color_used),attrs=colorAttribute),sep='', end='',flush= True);sleep(time)
 
-def pAudio():
-    if playAudio:
-       playsound(audio)
-        
+
 def pcode():
     # Print the code before wishing 
     if codePrint:
